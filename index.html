@@ -85,21 +85,6 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Reconstructed Point Cloud</h2>
-        <div class="content has-text-justified">
-          <p>
-            We show ...
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -234,6 +219,137 @@
   </div>
 </section>
 
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Reconstructed Point Clouds on 7-scenes (office)</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present three video sequences of the reconstructed point cloud on 7-Scenes (office) from different viewpoints.
+            The first sequence shows a top-down view, where our method produces a notably cleaner and more coherent point cloud.
+            The other two sequences provide zoom-in views of the left and middle walls. 
+            These close-up inspections demonstrate that our method reconstructs each wall as a single, 
+            well-aligned surface, whereas MASt3R-SLAM and VGGT-SLAM exhibit misalignment across views, 
+            resulting in ghosting artifacts and incorrect geometry.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Ground Truth</h2>
+          <video id="mast3r" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/GT_0000.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-3">HI-SLAM2</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="vggt" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/HI-SLAM_0000.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="column">
+        <h2 class="title is-3">SING3R-SLAM(Ours)</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="ours" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Ours_0000.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      
+      <div class="column">
+        <div class="content">
+          <video id="mast3r" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/GT_0000_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="vggt" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/HI-SLAM_0000_1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="columns is-centered">
+          <div class="column content">
+            <video id="ours" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/Ours_0000_1.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Reconstructed Meshes on ScanNet-v2 (scene0000)</h2>
+        <div class="content has-text-justified">
+          <p>
+            We show the reconstructed meshes from different viewpoints, compared with the ground truth and HI-SLAM2. 
+            Our method successfully reconstructs the bicycle in scene_0000, which HI-SLAM2 fails to recover. 
+            Even in the ground truth, the bicycle geometry is incomplete, highlighting that our approach can recover fine object details. 
+            We provide two video sequences: a top-down view of the full scene and a zoom-in view on the bicycle, 
+            clearly demonstrating the improved reconstruction fidelity of our method.     
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
